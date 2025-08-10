@@ -4,7 +4,7 @@ A modern Angular application built with TypeScript for efficient management oper
 
 ## 📋 Description
 
-This is a single-page application (SPA) built with Angular 17, designed to provide a comprehensive management solution. The application leverages the latest Angular features and follows modern development practices.
+This is a single-page application (SPA) built with Angular 17, designed for comprehensive train component management. It provides an intuitive interface to manage train components, leveraging the latest Angular features and modern development practices.
 
 ## 🚀 Features
 
