@@ -1,0 +1,22 @@
+<div class="table-wrap">
+    <table class="table">
+        <thead class="thead-primary">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Unique Number</th>
+                <th>Can Assign Quantity</th>
+                <th>Options</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of trainList">
+                <th scope="row" class="scope">{{item.id}}</th>
+                <td>{{item.name}}</td>
+                <td>{{item.uniqueNumber}}</td>
+                <td>{{item.canAssignQuantity}}</td>
+                <td><a class="btn btn-primary" (click)="openDetails(item.id)">Show</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

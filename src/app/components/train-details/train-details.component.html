@@ -1,0 +1,48 @@
+<div class="bg-contact2">
+    <div class="container-contact2">
+        <div class="wrap-contact2">
+            <form [formGroup]="form" class="contact2-form validate-form">
+                <div class="wrap-input2 validate-input">
+                    <input class="input2" formControlName="id" />
+                </div>
+
+                <div class="wrap-input2 validate-input">
+                    <input class="input2 " type="text" formControlName="name" />
+                </div>
+
+                <div class="wrap-input2 validate-input">
+                    <input class="input2" type="text" formControlName="uniqueNumber" />
+                </div>
+
+                <div class="validate-input">
+                    <p>{{canAssignQuantityMessage}}</p>
+                </div>
+
+                <div *ngIf="train?.canAssignQuantity" class="wrap-input2 validate-input" style="margin-bottom: 20px;">
+                    <input class="input2" type="text" formControlName="quantity" placeholder="Enter quantity" />
+                </div>
+
+                <div [ngStyle]="{
+    visibility: form.get('quantity')?.hasError('notPositiveInteger') ? 'visible' : 'hidden'
+  }">
+                    <p class="text2">
+                        Quantity must be a positive integer.
+                    </p>
+                </div>
+
+                <div class="container-contact2-form-btn">
+                    <div class="wrap-contact2-form-btn">
+                        <!-- <div class="contact2-form-bgbtn"></div> -->
+                        <button class="contact2-form-btn" (click)="save()">
+                            Save
+                        </button>
+
+                        <button class="contact2-form-btn" (click)="goBack()">
+                            Go back
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
