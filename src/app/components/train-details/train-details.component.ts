@@ -8,7 +8,8 @@ import { Train } from '../../models/train';
 @Component({
     selector: 'app-train-details',
     templateUrl: './train-details.component.html',
-    styleUrls: ['./train-details.component.scss']
+    styleUrls: ['./train-details.component.scss'],
+    standalone: false
 })
 
 export class TrainDetailsComponent implements OnInit {

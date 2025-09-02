@@ -6,7 +6,8 @@ import { TrainService } from '../../services/train-service/train.service';
 @Component({
     selector: 'app-train-list',
     templateUrl: './train-list.component.html',
-    styleUrls: ['./train-list.component.scss']
+    styleUrls: ['./train-list.component.scss'],
+    standalone: false
 })
 export class TrainListComponent implements OnInit {
     trainList: Train[] = [];
